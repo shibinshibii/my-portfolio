@@ -90,7 +90,7 @@ function Home(){
           
           
 
-          <a href="www.linkedin.com/in/shibin-shibi-a783a32b7" target="_blank" rel="noopener noreferrer" className="linkedin-icon"><FaLinkedin size={29} />
+          <a href="https://www.linkedin.com/in/shibin-shibi-a783a32b7" target="_blank" rel="noopener noreferrer" className="linkedin-icon"><FaLinkedin size={29} />
           </a></motion.div></motion.div>
           <motion.div
           initial={{y:50,opacity:0}}
