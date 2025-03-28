@@ -1,0 +1,291 @@
+body{
+  background-color: #232020;
+  overflow-x: hidden;
+}
+.container1 {
+  margin: 50px auto; /* Centers the container horizontally */
+  padding: 10px;
+  max-width: 90%; /* Adjust width dynamically */
+  width: 310px; /* Default width */
+  color: whitesmoke;
+}
+
+/* Tablets (screen width 768px and above) */
+@media screen and (min-width: 768px) {
+  .container1 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+  }
+}
+
+/* Large Screens (screen width 1024px and above) */
+@media screen and (min-width: 1024px) {
+  .container1 {
+    margin-left: 320px; /* Restore margin on large screens */
+    max-width: 310px;
+  }
+}
+.container1 h1{
+  margin: 0;
+  font-family: 'Cascadia Code';
+  font-size: 40px;
+}
+.container1 p{
+  font-family: 'Calibri';
+  font-weight: bold;
+}
+.container1 .hello{
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding-top: 20px;
+}
+.linkedin-icon,.mail-icon,.github-icon,.phone-icon{
+  color:whitesmoke;
+  transition: color 0.3s ease-in-out, transform 0.3s;
+}
+.linkedin-icon:hover,.mail-icon:hover,.github-icon:hover{
+  transform: scale(1.1);
+}
+.phone-number{
+  font-family: 'Calibri';
+  font-size: small;
+}
+.container2 {
+  margin-top: 20px;
+  margin-left: 10%; /* Adjust margin for responsiveness */
+  color: whitesmoke;
+  padding: 10px;
+}
+
+/* Ensure text alignment remains unchanged */
+.container2 h2 {
+  margin-left: 68px;
+  font-family: 'Cascadia Code';
+}
+
+/* Responsive Image Grid */
+.container2 .image-grid {
+  padding-top: 25px;
+  display: flex;
+  gap: 23px;
+  flex-wrap: wrap; /* Allows images to wrap on smaller screens */
+  justify-content: flex-start; /* Aligns images to the left */
+}
+
+/* Image Box - Responsive */
+.container2 .image-grid .image-box {
+  height: 385px;
+  width: 231px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 5%;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Small Screens (Phones - less than 600px) */
+@media screen and (max-width: 600px) {
+  .container2 {
+    margin-left: 5%; /* Reduce left margin */
+    padding: 5px;
+  }
+
+  .container2 .image-grid {
+    justify-content: center; /* Center images on small screens */
+    gap: 30ppx;
+  }
+
+  .container2 .image-grid .image-box {
+    width: 90%; /* Make images take full width */
+    height: auto; /* Adjust height dynamically */
+  }
+}
+
+/* Tablets (600px - 1024px) */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .container2 {
+    margin-left: 7%;
+  }
+
+  .container2 .image-grid {
+    justify-content: space-evenly; /* Distribute images evenly */
+  }
+
+  .container2 .image-grid .image-box {
+    width: 45%; /* Two images per row */
+    height: auto;
+  }
+}
+
+/* Large Screens (1024px and above) */
+@media screen and (min-width: 1024px) {
+  .container2 {
+    margin-left: 252px; /* Restore original margin */
+  }
+
+  .container2 .image-grid {
+    justify-content: flex-start;
+  }
+
+  .container2 .image-grid .image-box {
+    width: 231px; /* Restore original size */
+    height: 385px;
+  }
+}
+.text-overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #232020;
+  color: whitesmoke;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s ease-out;
+  font-family: 'Calibri';
+  font-size: small;
+}
+
+.container3 {
+  margin-left: 320px;
+  margin-top: 90px;
+}
+
+/* Heading Styling */
+.container3 .h2 {
+  font-family: 'Cascadia Code';
+  color: whitesmoke;
+}
+
+/* List Container */
+.container3 ul {
+  display: inline-block;
+  gap: 30px;
+}
+
+/* List Items */
+.container3 li {
+  line-height: 37px;
+  color: whitesmoke;
+  font-family: 'Calibri';
+}
+
+/* 📌 Responsive Adjustments */
+@media (max-width: 1024px) {  /* For Tablets */
+  .container3 {
+    margin-left: 200px;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 768px) {  /* For Small Tablets & Large Phones */
+  .container3 {
+    margin-left: 50px;
+    margin-top: 40px;
+  }
+  
+  .container3 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {  /* For Mobile Phones */
+  .container3 {
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+  
+  .container3 ul {
+    gap: 10px;
+  }
+  
+  .container3 li {
+    line-height: 30px;
+  }
+}
+
+.container4 {
+  margin-left: 320px;
+  margin-top: 90px;
+}
+
+/* Heading Styling */
+.container4 h2 {
+  font-family: 'Cascadia Code';
+  color: whitesmoke;
+}
+
+/* List Container */
+.container4 ul {
+  display: inline-block;
+  gap: 30px;
+  padding-bottom: 60px;
+}
+
+/* List Items */
+.container4 li {
+  line-height: 37px;
+  color: whitesmoke;
+  font-family: 'Calibri';
+}
+
+/* Paragraph Styling */
+.container4 p {
+  font-family: 'Calibri';
+  color: whitesmoke;
+}
+
+/* Spacing for Specific Paragraphs */
+.container4 .p1 {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+/* 📌 Responsive Adjustments */
+@media (max-width: 1024px) {  /* For Tablets */
+  .container4 {
+    margin-left: 200px;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 768px) {  /* For Small Tablets & Large Phones */
+  .container4 {
+    margin-left: 50px;
+    margin-top: 40px;
+  }
+
+  .container4 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {  /* For Mobile Phones */
+  .container4 {
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+
+  .container4 ul {
+    gap: 10px;
+  }
+
+  .container4 li {
+    line-height: 30px;
+  }
+
+  .container4 .p1 {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+}
+
+
+
