@@ -8,7 +8,7 @@ import { Tooltip } from "react-tooltip";
 import { useRef, useState } from "react";
 import { motion,useInView} from "framer-motion";
 import rQg from "./assets/7253845.jpg"
-import eCommerce from "./assets/eCommerce.jpg"
+import eCommerce from "./assets/ecommerce.jpg"
 import socialImg from "./assets/social.png"
 import quizImg from "./assets/quizimg.jpg"
 import { use } from "react";
