@@ -120,7 +120,7 @@ function Home(){
           initial={{y:50,opacity:0}}
           animate={{y:[50,-8,3,0],opacity:1}}
           transition={{duration:1.2,ease:"easeIn"}}>
-          <a href="" data-tooltip-id="phone-tooltip" className="phone-icon"><FaPhoneAlt size={26} color="whitesmoke"/></a></motion.div>
+          <a href="#" data-tooltip-id="phone-tooltip" className="phone-icon"><FaPhoneAlt size={26} color="whitesmoke"/></a></motion.div>
           <Tooltip id="phone-tooltip" place="top" effect="solid" delayHide={4000}>
             <div style={{display:"flex", alignItems:"center",gap:"10px"}}>
               <span className="phone-number">{phoneNumber}</span>
