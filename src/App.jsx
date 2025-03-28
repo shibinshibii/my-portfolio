@@ -3,7 +3,7 @@ import './index.css'
 import Home from './Home'
 import Quiz from './Quiz'
 import Ecommerce from './Ecommerce'
-import Socialmedia from './socialmedia'
+import Socialmedia from './Socialmedia'
 import QuoteGenerator from './QuoteGenerator'
 function App() {
 
