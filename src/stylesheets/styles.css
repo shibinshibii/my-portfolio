@@ -28,11 +28,11 @@ body{
 }
 .container1 h1{
   margin: 0;
-  font-family: 'Cascadia Code','Fira Code';
+  font-family: 'Cascadia Code','Fira Code',monospace;
   font-size: 40px;
 }
 .container1 p{
-  font-family: 'Calibri','Open Sans';
+  font-family: 'Calibri','Poppins';
   font-weight: bold;
 }
 .container1 .hello{
@@ -49,7 +49,7 @@ body{
   transform: scale(1.1);
 }
 .phone-number{
-  font-family: 'Calibri';
+  font-family: 'Calibri','Poppins';
   font-size: small;
 }
 .container2 {
@@ -62,7 +62,7 @@ body{
 /* Ensure text alignment remains unchanged */
 .container2 h2 {
   margin-left: 68px;
-  font-family: 'Cascadia Code';
+  font-family: 'Cascadia Code','Fira Code';
 }
 
 /* Responsive Image Grid */
@@ -145,7 +145,7 @@ body{
   padding: 10px 20px;
   border-radius: 5px;
   transition: 0.3s ease-out;
-  font-family: 'Calibri';
+  font-family: 'Calibri','Poppins';
   font-size: small;
 }
 
@@ -156,7 +156,7 @@ body{
 
 /* Heading Styling */
 .container3 .h2 {
-  font-family: 'Cascadia Code';
+  font-family: 'Cascadia Code','Fira Code';
   color: whitesmoke;
 }
 
@@ -170,7 +170,7 @@ body{
 .container3 li {
   line-height: 37px;
   color: whitesmoke;
-  font-family: 'Calibri';
+  font-family: 'Calibri','Poppins';
 }
 
 /* 📌 Responsive Adjustments */
@@ -216,7 +216,7 @@ body{
 
 /* Heading Styling */
 .container4 h2 {
-  font-family: 'Cascadia Code';
+  font-family: 'Cascadia Code','Fira Code';
   color: whitesmoke;
 }
 
@@ -231,12 +231,12 @@ body{
 .container4 li {
   line-height: 37px;
   color: whitesmoke;
-  font-family: 'Calibri';
+  font-family: 'Calibri','Poppins';
 }
 
 /* Paragraph Styling */
 .container4 p {
-  font-family: 'Calibri';
+  font-family: 'Calibri','Poppins';
   color: whitesmoke;
 }
 

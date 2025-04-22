@@ -228,7 +228,7 @@ function Home(){
       transition={{duration:0.3,ease:"easeInOut",delay:0.5}}
       >
 
-        <h2>CERTIFICATIONS</h2>
+        <h2>Certifications</h2>
         <p className="p1">Python Full Stack Developer - Internship Program</p>
         <p className="p2"><b>Technovalley Software India Pvt Ltd</b> <i>(Aug 2024 -Feb 2025)</i></p>
         <ul>
