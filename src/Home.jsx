@@ -228,16 +228,14 @@ function Home(){
       transition={{duration:0.3,ease:"easeInOut",delay:0.5}}
       >
 
-        <h2>Experience</h2>
-        <p className="p1">Python Full Stack Intern</p>
+        <h2>CERTIFICATIONS</h2>
+        <p className="p1">Python Full Stack Developer - Internship Program</p>
         <p className="p2"><b>Technovalley Software India Pvt Ltd</b> <i>(Aug 2024 -Feb 2025)</i></p>
         <ul>
           <li>Collaborating on real-world web applications, focusing on Django backend development and 
           React-based frontend. </li>
           <li>Gaining hands-on experience in REST API development, database management, and 
           performance optimization. </li>
-          <li>Working in an agile environment, contributing to code reviews, debugging, and feature 
-          implementations.</li>
         </ul>
       </motion.div>
     </motion.div>
