@@ -95,12 +95,12 @@ body{
 
   .container2 .image-grid {
     justify-content: center; /* Center images on small screens */
-    gap: 30ppx;
+    gap: 30px;
   }
 
   .container2 .image-grid .image-box {
-    width: 90%; /* Make images take full width */
-    height: auto; /* Adjust height dynamically */
+    height: 385px;
+    width: 231px;
   }
 }
 
@@ -115,8 +115,8 @@ body{
   }
 
   .container2 .image-grid .image-box {
-    width: 45%; /* Two images per row */
-    height: auto;
+    height: 385px;
+    width: 231px;
   }
 }
 

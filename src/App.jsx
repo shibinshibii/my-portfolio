@@ -8,20 +8,21 @@ import QuoteGenerator from './QuoteGenerator'
 function App() {
 
   return(
+  <div>
     <Router>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='quiz/' element={<Quiz/>}/>
-        <Route path='ecommerce/' element={<Ecommerce/>}/>
-        <Route path='socialmedia/' element={<Socialmedia/>}/>
-        <Route path='quotegenerator/' element={<QuoteGenerator/>}/>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='quiz/' element={<Quiz/>}/>
+      <Route path='ecommerce/' element={<Ecommerce/>}/>
+      <Route path='socialmedia/' element={<Socialmedia/>}/>
+      <Route path='quotegenerator/' element={<QuoteGenerator/>}/>
 
 
 
 
-      </Routes>
-    </Router>
-
+    </Routes>
+  </Router>
+</div>
   )
 }
 
