@@ -84,6 +84,7 @@ body{
   overflow: hidden;
   border-radius: 5%;
   transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 /* Small Screens (Phones - less than 600px) */
