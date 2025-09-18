@@ -15,7 +15,7 @@ function Ecommerce(){
                     management, secure checkout, and order tracking. </li>
 
                     <li>Implemented real-time cart updates using AJAX & Fetch API to enhance user experience. </li>
-                    <li>Integrated SQLite for database management and Django Authentication for user security. </li>
+                    <li>Integrated Django Authentication for user security. </li>
                 </ul>
                 <p><b>Tech Stack:  </b>Django, JavaScript, HTML, CSS, AJAX </p>
             </div>

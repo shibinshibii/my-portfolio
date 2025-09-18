@@ -28,7 +28,7 @@ body{
 }
 .container1 h1{
   margin: 0;
-  font-family: 'Cascadia Code','Fira Code',monospace;
+  font-family: 'Cascadia Code','Google Sans Code';
   font-size: 40px;
 }
 .container1 p{
