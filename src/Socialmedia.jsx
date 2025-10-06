@@ -19,7 +19,7 @@ function Socialmedia(){
                     and a real-time chat system.  </li>
                     <li>Implementing AJAX for seamless dynamic updates and a responsive UI using Bootstrap. </li>
                 </ul>
-                <p><b>Tech Stack:  </b>Django, JavaScript, HTML, CSS, API Integration </p>
+                <p><b>Tech Stack:  </b>Django, JavaScript, HTML, CSS, AJAX</p>
             </div>
 
         </motion.div>
