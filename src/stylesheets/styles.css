@@ -62,7 +62,7 @@ body{
 /* Ensure text alignment remains unchanged */
 .container2 h2 {
   margin-left: 68px;
-  font-family: 'Cascadia Code','Fira Code';
+  font-family: 'Cascadia Code','Google Sans Code';
 }
 
 /* Responsive Image Grid */
