@@ -39,9 +39,7 @@ function Home() {
   const [showText4, setShowText4] = useState(false);
 
   const ref = useRef(null);
-  const ref2 = useRef(null);
   const IsInView = useInView(ref, { triggerOnce: true, margin: "-100px" });
-  const IsInView2 = useInView(ref2, { triggerOnce: true, margin: "-100px" });
 
   return (
     <motion.div
@@ -267,15 +265,15 @@ function Home() {
 
       <motion.div
         className="container4"
-        ref={ref2}
         initial={{ y: 50, opacity: 0 }}
-        animate={IsInView2 ? { y: 0, opacity: 1 } : {}}
+        animate={IsInView ? { y: 0, opacity: 1 } : {}}
         transition={{ duration: 0.3, ease: "easeInOut", delay: 0.5 }}
       >
         <h2>Certifications</h2>
         <p className="p1">Python Full Stack Developer - Internship Program</p>
         <p className="p2">
-          <b>Technovalley Software India Pvt Ltd Kochi</b> <i>(Aug 2024 -Feb 2025)</i>
+          <b>Technovalley Software India Pvt Ltd Kochi</b>{" "}
+          <i>(Aug 2024 -Feb 2025)</i>
         </p>
         <ul>
           <li>
