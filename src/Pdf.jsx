@@ -1,6 +1,5 @@
 import './stylesheets/quizapp.css'
 import { motion } from "framer-motion"
-import reacticon from './assets/react.svg'
 function Pdf(){
     
     return(
