@@ -447,6 +447,12 @@ body{
 /* CTA footer */
 .pm-footer {
   display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pm-footer-row {
+  display: flex;
   gap: 12px;
   flex-wrap: wrap;
 }
@@ -479,6 +485,25 @@ body{
   background: rgba(255, 255, 255, 0.07);
   color: #d4d0d0;
   border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.pm-btn--view-more {
+  width: 100%;
+  justify-content: center;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  letter-spacing: 0.03em;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.15s;
+}
+
+.pm-btn--view-more:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+  opacity: 1;
 }
 
 /* Responsive */

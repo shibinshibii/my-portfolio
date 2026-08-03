@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoClose } from "react-icons/io5";
+import { Link } from "react-router-dom";
 import socialImg from "../assets/social.png";
 
 function SocialMediaModal({ isOpen, onClose }) {
@@ -87,6 +88,9 @@ function SocialMediaModal({ isOpen, onClose }) {
 
                 <div className="pm-footer">
                   <span className="pm-note">🚧 Work in progress</span>
+                  <Link to="/socialmedia" state={{ fromModal: true }} className="pm-btn pm-btn--view-more" id="social-modal-view-more-btn">
+                    View More →
+                  </Link>
                 </div>
               </motion.div>
             </motion.div>

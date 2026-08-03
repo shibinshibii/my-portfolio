@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoClose } from "react-icons/io5";
 import { FiExternalLink } from "react-icons/fi";
+import { Link } from "react-router-dom";
 import rQg from "../assets/7253845.jpg";
 
 function PdfModal({ isOpen, onClose }) {
@@ -81,15 +82,20 @@ function PdfModal({ isOpen, onClose }) {
                 </ul>
 
                 <div className="pm-footer">
-                  <a
-                    href="https://pdf-query-app-delta.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="pm-btn pm-btn--primary"
-                    id="pdf-modal-live-btn"
-                  >
-                    <FiExternalLink size={15} /> Live Demo
-                  </a>
+                  <div className="pm-footer-row">
+                    <a
+                      href="https://pdf-query-app-delta.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="pm-btn pm-btn--primary"
+                      id="pdf-modal-live-btn"
+                    >
+                      <FiExternalLink size={15} /> Live Demo
+                    </a>
+                  </div>
+                  <Link to="/pdf" state={{ fromModal: true }} className="pm-btn pm-btn--view-more" id="pdf-modal-view-more-btn">
+                    View More →
+                  </Link>
                 </div>
               </motion.div>
             </motion.div>

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoClose } from "react-icons/io5";
+import { Link } from "react-router-dom";
 import eCommerce from "../assets/ecommerce.jpg";
 
 function EcommerceModal({ isOpen, onClose }) {
@@ -77,6 +78,9 @@ function EcommerceModal({ isOpen, onClose }) {
 
                 <div className="pm-footer">
                   <span className="pm-note">Private repository</span>
+                  <Link to="/ecommerce" state={{ fromModal: true }} className="pm-btn pm-btn--view-more" id="ecommerce-modal-view-more-btn">
+                    View More →
+                  </Link>
                 </div>
               </motion.div>
             </motion.div>
