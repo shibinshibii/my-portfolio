@@ -103,21 +103,9 @@ function ProjectModal({ project, onClose }) {
           <div className="pm-body">
             <h2 className="pm-title">{project.title}</h2>
 
-            {/* Tech stack pills */}
-            <div className="pm-tags">
-              {project.tags.map((tag) => (
-                <span key={tag} className="pm-tag">
-                  {tag}
-                </span>
-              ))}
-            </div>
-
-            {/* Description bullets */}
-            <ul className="pm-list">
-              {project.bullets.map((bullet, i) => (
-                <li key={i}>{bullet}</li>
-              ))}
-            </ul>
+            <p className="pm-desc">
+              {project.description || (project.bullets && project.bullets.join(" "))}
+            </p>
 
             {/* CTA row */}
             <div className="pm-footer">
@@ -129,19 +117,18 @@ function ProjectModal({ project, onClose }) {
                   className="pm-btn pm-btn--primary"
                   id="modal-live-demo-btn"
                 >
-                  <FiExternalLink size={15} />
-                  Live Demo
+                  Try it now
                 </a>
               )}
-              {project.githubUrl && (
+              {!project.liveUrl && project.githubUrl && (
                 <a
                   href={project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="pm-btn pm-btn--secondary"
+                  className="pm-btn pm-btn--primary"
                   id="modal-github-btn"
                 >
-                  GitHub
+                  View GitHub
                 </a>
               )}
             </div>

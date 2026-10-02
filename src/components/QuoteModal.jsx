@@ -64,21 +64,13 @@ function QuoteModal({ isOpen, onClose }) {
               >
                 <h2 className="pm-title">Random Quote Generator</h2>
 
-                <div className="pm-tags">
-                  {["Django", "JavaScript", "HTML", "CSS", "API Integration"].map((t) => (
-                    <span key={t} className="pm-tag">{t}</span>
-                  ))}
-                </div>
-
-                <ul className="pm-list">
-                  <li>Built a dynamic quote generator that fetches and displays random motivational quotes on demand.</li>
-                  <li>Integrated external quote APIs for dynamic retrieval, ensuring a varied and engaging experience.</li>
-                </ul>
+                <p className="pm-desc">
+                  A dynamic web app that fetches and displays random motivational quotes on demand, integrated with external quote APIs.
+                </p>
 
                 <div className="pm-footer">
-                  <span className="pm-note">Private repository</span>
-                  <Link to="/quotegenerator" state={{ fromModal: true }} className="pm-btn pm-btn--view-more" id="quote-modal-view-more-btn">
-                    View More →
+                  <Link to="/quotegenerator" state={{ fromModal: true }} className="pm-btn pm-btn--primary" id="quote-modal-view-more-btn">
+                    Learn more
                   </Link>
                 </div>
               </motion.div>

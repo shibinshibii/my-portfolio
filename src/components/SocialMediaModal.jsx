@@ -43,16 +43,6 @@ function SocialMediaModal({ isOpen, onClose }) {
               <div className="pm-hero">
                 <motion.img layoutId="img-socialmedia" src={socialImg} alt="Social Media Platform" />
                 <div className="pm-hero-overlay" />
-                {/* In-progress badge */}
-                <motion.div
-                  className="pm-badge"
-                  initial={{ opacity: 0, scale: 0.7 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.2, delay: 0.18 }}
-                >
-                  In Progress
-                </motion.div>
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -74,22 +64,13 @@ function SocialMediaModal({ isOpen, onClose }) {
               >
                 <h2 className="pm-title">Developer Community Social Media</h2>
 
-                <div className="pm-tags">
-                  {["Django", "JavaScript", "HTML", "CSS", "AJAX", "Bootstrap"].map((t) => (
-                    <span key={t} className="pm-tag">{t}</span>
-                  ))}
-                </div>
-
-                <ul className="pm-list">
-                  <li>Building a social media platform for developers to connect, share knowledge, and collaborate on projects.</li>
-                  <li>Features: authentication, user-generated posts, follow system, interactive discussions, and real-time chat.</li>
-                  <li>Implementing AJAX for seamless dynamic updates with a responsive Bootstrap UI.</li>
-                </ul>
+                <p className="pm-desc">
+                  A social platform where developers can connect, share knowledge, and collaborate on projects through interactive discussions and real-time chat.
+                </p>
 
                 <div className="pm-footer">
-                  <span className="pm-note">🚧 Work in progress</span>
-                  <Link to="/socialmedia" state={{ fromModal: true }} className="pm-btn pm-btn--view-more" id="social-modal-view-more-btn">
-                    View More →
+                  <Link to="/socialmedia" state={{ fromModal: true }} className="pm-btn pm-btn--primary" id="social-modal-view-more-btn">
+                    Learn more
                   </Link>
                 </div>
               </motion.div>

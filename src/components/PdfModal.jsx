@@ -69,33 +69,20 @@ function PdfModal({ isOpen, onClose }) {
               >
                 <h2 className="pm-title">PDF Query App</h2>
 
-                <div className="pm-tags">
-                  {["FastAPI", "React", "LlamaIndex", "Gemini"].map((t) => (
-                    <span key={t} className="pm-tag">{t}</span>
-                  ))}
-                </div>
-
-                <ul className="pm-list">
-                  <li>Built a full-stack PDF Query Web App using React and FastAPI, letting users upload PDFs and ask context-based questions.</li>
-                  <li>Integrated Gemini LLM via LlamaIndex to parse, index, and retrieve answers using vector embeddings from uploaded documents.</li>
-                  <li>Implemented file uploads, local vector caching, and persistent chat history.</li>
-                </ul>
+                <p className="pm-desc">
+                  A smart document assistant that lets you upload PDFs and instantly get answers to your questions, powered by Gemini.
+                </p>
 
                 <div className="pm-footer">
-                  <div className="pm-footer-row">
-                    <a
-                      href="https://pdf-query-app-delta.vercel.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="pm-btn pm-btn--primary"
-                      id="pdf-modal-live-btn"
-                    >
-                      <FiExternalLink size={15} /> Live Demo
-                    </a>
-                  </div>
-                  <Link to="/pdf" state={{ fromModal: true }} className="pm-btn pm-btn--view-more" id="pdf-modal-view-more-btn">
-                    View More →
-                  </Link>
+                  <a
+                    href="https://pdf-query-app-delta.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="pm-btn pm-btn--primary"
+                    id="pdf-modal-live-btn"
+                  >
+                    Try it now
+                  </a>
                 </div>
               </motion.div>
             </motion.div>

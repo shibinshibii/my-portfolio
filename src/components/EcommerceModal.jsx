@@ -64,22 +64,13 @@ function EcommerceModal({ isOpen, onClose }) {
               >
                 <h2 className="pm-title">E-commerce Platform</h2>
 
-                <div className="pm-tags">
-                  {["Django", "JavaScript", "HTML", "CSS", "AJAX"].map((t) => (
-                    <span key={t} className="pm-tag">{t}</span>
-                  ))}
-                </div>
-
-                <ul className="pm-list">
-                  <li>Developed a fully functional e-commerce platform with product browsing, cart management, secure checkout, and order tracking.</li>
-                  <li>Implemented real-time cart updates using AJAX & Fetch API for a seamless shopping experience.</li>
-                  <li>Integrated Django Authentication for user account security and session management.</li>
-                </ul>
+                <p className="pm-desc">
+                  A fully functional e-commerce platform featuring seamless cart updates, secure checkout, and reliable order tracking.
+                </p>
 
                 <div className="pm-footer">
-                  <span className="pm-note">Private repository</span>
-                  <Link to="/ecommerce" state={{ fromModal: true }} className="pm-btn pm-btn--view-more" id="ecommerce-modal-view-more-btn">
-                    View More →
+                  <Link to="/ecommerce" state={{ fromModal: true }} className="pm-btn pm-btn--primary" id="ecommerce-modal-view-more-btn">
+                    Learn more
                   </Link>
                 </div>
               </motion.div>
