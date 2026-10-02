@@ -39,9 +39,10 @@ function EcommerceModal({ isOpen, onClose }) {
               aria-modal="true"
               aria-label="E-commerce"
               style={{ borderRadius: 18 }}
+              transition={{ type: "spring", stiffness: 300, damping: 30 }}
             >
               <div className="pm-hero">
-                <motion.img layoutId="img-ecommerce" src={eCommerce} alt="E-commerce" />
+                <motion.img layoutId="img-ecommerce" src={eCommerce} alt="E-commerce" transition={{ type: "spring", stiffness: 300, damping: 30 }} />
                 <div className="pm-hero-overlay" />
                 <motion.div
                   initial={{ opacity: 0 }}

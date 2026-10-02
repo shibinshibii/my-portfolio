@@ -140,7 +140,7 @@ function Home() {
                 layoutId="card-pdf"
                 className="image-box"
                 whileHover={{ y: -9 }}
-                transition={{ duration: 0, ease: "easeIn" }}
+                transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 onMouseEnter={() => setHover("pdf")}
                 onMouseLeave={() => setHover(null)}
                 onClick={() => openProject("pdf")}
@@ -161,7 +161,7 @@ function Home() {
                 layoutId="card-ecommerce"
                 className="image-box"
                 whileHover={{ y: -9 }}
-                transition={{ duration: 0, ease: "easeIn" }}
+                transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 onMouseEnter={() => setHover("ecommerce")}
                 onMouseLeave={() => setHover(null)}
                 onClick={() => openProject("ecommerce")}
@@ -182,7 +182,7 @@ function Home() {
                 layoutId="card-socialmedia"
                 className="image-box"
                 whileHover={{ y: -9 }}
-                transition={{ duration: 0, ease: "easeIn" }}
+                transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 onMouseEnter={() => setHover("social")}
                 onMouseLeave={() => setHover(null)}
                 onClick={() => openProject("social")}
@@ -205,7 +205,7 @@ function Home() {
                 layoutId="card-quote"
                 className="image-box"
                 whileHover={{ y: -9 }}
-                transition={{ duration: 0, ease: "easeIn" }}
+                transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 onMouseEnter={() => setHover("quote")}
                 onMouseLeave={() => setHover(null)}
                 onClick={() => openProject("quote")}

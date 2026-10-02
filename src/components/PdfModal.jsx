@@ -42,10 +42,11 @@ function PdfModal({ isOpen, onClose }) {
               aria-modal="true"
               aria-label="PDF Query App"
               style={{ borderRadius: 18 }}
+              transition={{ type: "spring", stiffness: 300, damping: 30 }}
             >
               {/* Hero image – also morphs */}
               <div className="pm-hero">
-                <motion.img layoutId="img-pdf" src={rQg} alt="PDF Query App" />
+                <motion.img layoutId="img-pdf" src={rQg} alt="PDF Query App" transition={{ type: "spring", stiffness: 300, damping: 30 }} />
                 <div className="pm-hero-overlay" />
                 <motion.div
                   initial={{ opacity: 0 }}

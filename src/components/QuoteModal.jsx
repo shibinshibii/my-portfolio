@@ -39,9 +39,10 @@ function QuoteModal({ isOpen, onClose }) {
               aria-modal="true"
               aria-label="Random Quote Generator"
               style={{ borderRadius: 18 }}
+              transition={{ type: "spring", stiffness: 300, damping: 30 }}
             >
               <div className="pm-hero">
-                <motion.img layoutId="img-quote" src={quizImg} alt="Quote Generator" />
+                <motion.img layoutId="img-quote" src={quizImg} alt="Quote Generator" transition={{ type: "spring", stiffness: 300, damping: 30 }} />
                 <div className="pm-hero-overlay" />
                 <motion.div
                   initial={{ opacity: 0 }}

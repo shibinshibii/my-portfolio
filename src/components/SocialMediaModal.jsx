@@ -39,9 +39,10 @@ function SocialMediaModal({ isOpen, onClose }) {
               aria-modal="true"
               aria-label="Developer Community Social Media"
               style={{ borderRadius: 18 }}
+              transition={{ type: "spring", stiffness: 300, damping: 30 }}
             >
               <div className="pm-hero">
-                <motion.img layoutId="img-socialmedia" src={socialImg} alt="Social Media Platform" />
+                <motion.img layoutId="img-socialmedia" src={socialImg} alt="Social Media Platform" transition={{ type: "spring", stiffness: 300, damping: 30 }} />
                 <div className="pm-hero-overlay" />
                 <motion.div
                   initial={{ opacity: 0 }}
